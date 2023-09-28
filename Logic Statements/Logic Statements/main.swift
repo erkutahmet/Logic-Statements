@@ -21,36 +21,39 @@ import Foundation
     else block (optional): You can provide an else block after the if block. The code inside the else block is executed if the condition is false. It's optional, and you can omit it if you don't need to execute any code when the condition is false.
 */
 
+// MARK: IF Statement
 var name = "Erkut"
 var age = 21
 
-if age >= 18 { // true
-    print("You're an adult.") // this condition run
-} else { // false
-    print("You're not yet an adult.") // this condition won't run
+if age >= 18 { // this condition true
+    print("You're an adult.") // this code run
+} else { // this condition false
+    print("You're not yet an adult.") // this code won't run
 }
 
-if name == "Ahmet" { // false
-    print("Hello, welcome \(name).") // this condition won't run
-} else if name == "Erkut" { // true
-    print("Hello, welcome \(name).") // this condition run
-} else { // false
-    print("Uknown member.") // this condition won't run
+if name == "Ahmet" { // this condition false
+    print("Hello, welcome \(name).") // this code won't run
+} else if name == "Erkut" { // this condition true
+    print("Hello, welcome \(name).") // this code run
+} else { // this condition false
+    print("Uknown member.") // this code won't run
 }
 
 let userName = "user123"
 let pass = 12345
 
-if userName == "user123" && pass == 12345 { // true
-    print("Logged in successfully.") // this condition run
-} else { // false
-    print("Please check your infos again!") // this condition won't run
+if userName == "user123" && pass == 12345 { // this condition true
+    print("Logged in successfully.") // this code run
+} else { // this condition false
+    print("Please check your infos again!") // this code won't run
 }
 
 let result = 11
 
-if result == 9 || result == 10 { // false
-    print("Result is 9 or 10.") // this condition won't run
-} else { // true
-    print("Result is not 9 or 10") // this condition run
+if result == 9 || result == 10 { // this condition false
+    print("Result is 9 or 10.") // this code won't run
+} else { // this condition true
+    print("Result is not 9 or 10") // this code run
 }
+
+// MARK: Switch Statement
